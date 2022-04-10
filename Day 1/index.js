@@ -3,3 +3,5 @@ const sumofArray = function (arr) {
     return val + acc;
   }, 0);
 };
+
+console.log(sumofArray([1, 2, 3, 4]));

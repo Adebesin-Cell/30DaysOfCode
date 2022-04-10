@@ -9,3 +9,7 @@
 **Day3**
 
 - Solution URL: [https://github.com/Adebesin-Cell/30DaysOfCode/tree/main/Day%203](https://adebesin-cell.github.io/30DaysOfCode/Day%203/)
+
+**Day6**
+
+- Solution URL: [https://github.com/Adebesin-Cell/30DaysOfCode/tree/main/Day%206](https://adebesin-cell.github.io/30DaysOfCode/Day%206/)

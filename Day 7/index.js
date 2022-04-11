@@ -18,3 +18,4 @@ const sortArray = function (arr) {
 };
 
 console.log(sortArray([0, 5, 3, 2, 1, 7]));
+console.log(sortArray([4, 9, -3, 5, 0, -14, 10]));

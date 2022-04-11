@@ -10,6 +10,14 @@
 
 - Solution URL: [https://github.com/Adebesin-Cell/30DaysOfCode/tree/main/Day%203](https://adebesin-cell.github.io/30DaysOfCode/Day%203/)
 
+**Day4**
+
+- Solution URL: [https://github.com/Adebesin-Cell/30DaysOfCode/tree/main/Day%204](https://adebesin-cell.github.io/30DaysOfCode/Day%204/)
+
+**Day5**
+
+- Solution URL: [https://github.com/Adebesin-Cell/30DaysOfCode/tree/main/Day%205](https://adebesin-cell.github.io/30DaysOfCode/Day%205/)
+
 **Day6**
 
 - Solution URL: [https://github.com/Adebesin-Cell/30DaysOfCode/tree/main/Day%206](https://adebesin-cell.github.io/30DaysOfCode/Day%206/)

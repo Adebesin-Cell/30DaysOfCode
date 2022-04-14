@@ -29,3 +29,11 @@
 **Day8**
 
 - Solution URL: [https://github.com/Adebesin-Cell/30DaysOfCode/tree/main/Day%208](https://adebesin-cell.github.io/30DaysOfCode/Day%208/)
+
+**Day9**
+
+- Solution URL: [https://github.com/Adebesin-Cell/30DaysOfCode/tree/main/Day%209](https://adebesin-cell.github.io/30DaysOfCode/Day%209/)
+
+**Day10**
+
+- Solution URL: [https://github.com/Adebesin-Cell/30DaysOfCode/tree/main/Day%2010](https://adebesin-cell.github.io/30DaysOfCode/Day%2010/)

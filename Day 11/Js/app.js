@@ -18,7 +18,7 @@ form.addEventListener("submit", function (e) {
   e.preventDefault();
   const formData = [...new FormData(form)].flat(1);
 
-  if (formData.length === 0) return;
+  if (formData.length === 0) return alert("Select a value");
 
   const [_, value] = formData;
 

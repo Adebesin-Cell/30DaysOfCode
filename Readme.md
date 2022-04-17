@@ -41,3 +41,7 @@
 **Day11**
 
 - Solution URL: [https://github.com/Adebesin-Cell/30DaysOfCode/tree/main/Day%2011](https://adebesin-cell.github.io/30DaysOfCode/Day%2011/)
+
+**Day12**
+
+- Solution URL: [https://github.com/Adebesin-Cell/30DaysOfCode/tree/main/Day%2012](https://adebesin-cell.github.io/30DaysOfCode/Day%2012/)

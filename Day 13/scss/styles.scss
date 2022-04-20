@@ -37,6 +37,15 @@
   padding-top: calc(2.2 * var(--span-xl));
   padding-bottom: calc(5.15 * var(--span-2xl));
 
+  @media only screen and (max-width: 600px) {
+    padding-top: calc(1.5 * var(--span-xl));
+  }
+
+  @media only screen and (max-width: 600px) {
+    padding-left: var(--span-s);
+    padding-right: var(--span-s);
+  }
+
   &__overlay {
     position: absolute;
     left: 50%;
@@ -55,6 +64,10 @@
     font-weight: var(--weight-xxlg);
     color: var(--f__dark__sat__blue);
     text-align: center;
+
+    @media only screen and (max-width: 600px) {
+      font-size: var(--size-l);
+    }
   }
 
   &__paragraph {
@@ -64,6 +77,10 @@
     font-weight: var(--weight-lg);
     color: var(--f__grayish__blue);
     text-align: center;
+
+    @media only screen and (max-width: 600px) {
+      padding: 0 var(--span-xl);
+    }
   }
 }
 
@@ -80,12 +97,24 @@
   padding-top: var(--span-m);
   box-shadow: 0 10px 40px -20px rgba(46, 78, 150, 0.4);
 
+  @media only screen and (max-width: 600px) {
+    margin-top: calc(-5 * var(--span-2xl) + var(--span-2xl));
+    margin-left: var(--span-s);
+    margin-right: var(--span-s);
+    margin-bottom: var(--span-m);
+  }
+
   &__header {
     margin-top: var(--span-s);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 var(--span-xl);
+
+    @media only screen and (max-width: 600px) {
+      padding: 0 var(--span-s);
+      justify-content: center;
+    }
   }
 
   &__rate {
@@ -101,6 +130,22 @@
   &__value {
     display: flex;
     align-items: center;
+
+    @media only screen and (max-width: 600px) {
+      display: none;
+    }
+
+    &--mobile {
+      display: none;
+
+      @media only screen and (max-width: 600px) {
+        padding: var(--span-m) 0;
+        padding-bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
 
     &--lg {
       font-family: var(--Manrope);
@@ -131,6 +176,10 @@
   &__input {
     margin-top: var(--span-l);
     padding: 0 var(--span-xl);
+
+    @media only screen and (max-width: 600px) {
+      padding: 0 var(--span-s);
+    }
   }
 
   &__range {
@@ -187,6 +236,11 @@
     padding: 0 var(--span-2xl);
     gap: var(--span-s);
     margin-bottom: calc(var(--span-l) + 2px);
+
+    @media only screen and (max-width: 600px) {
+      padding: 0 var(--span-s);
+      justify-content: center;
+    }
   }
 
   &__billing {
@@ -205,6 +259,25 @@
     border-radius: 20px;
     color: var(--f__l__red);
     background: var(--f__l__grayish__red);
+
+    @media only screen and (max-width: 600px) {
+      display: none;
+    }
+
+    &--mobile {
+      display: none;
+
+      @media only screen and (max-width: 600px) {
+        display: inline-block;
+        font-size: calc(var(--size-xs) - 2px);
+        font-weight: var(--weight-xxlg);
+        padding: 5px 8px;
+        margin-left: 5px;
+        border-radius: 20px;
+        color: var(--f__l__red);
+        background: var(--f__l__grayish__red);
+      }
+    }
   }
 
   &__checkbox {
@@ -245,12 +318,22 @@
     padding: var(--span-s) var(--span-xl);
     padding-top: var(--span-m);
     display: flex;
+
+    @media only screen and (max-width: 600px) {
+      align-items: center;
+      flex-direction: column;
+      padding-bottom: var(--span-xl);
+    }
   }
 
   &__list {
     list-style-type: none;
     display: grid;
     gap: var(--span-xs);
+
+    @media only screen and (max-width: 600px) {
+      margin-bottom: var(--span-m);
+    }
   }
 
   &__item {

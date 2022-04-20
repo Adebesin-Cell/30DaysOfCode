@@ -2,9 +2,14 @@ const root = document.documentElement;
 const rangeSlider = document.querySelector(".pricing__range");
 const pagesViewEl = document.querySelector(".pricing__rate");
 const ratingDiscountCheck = document.querySelector(".pricing__checkbox");
-const priceEl = document.querySelector(".pricing__value--lg");
+const priceElArr = document.querySelectorAll(".price");
 
-priceEl.textContent = `$${0.0}`;
+const zero = 0;
+
+priceElArr.forEach((priceEl) => {
+  priceEl.textContent = `$${zero.toFixed(2)}`;
+});
+
 rangeSlider.setAttribute("value", 0);
 pagesViewEl.textContent = `0K pageviews`;
 
@@ -35,9 +40,14 @@ const pricingHandler = function (value) {
 
   if (ratingDiscountCheck.checked) {
     const discountPrice = pricing - pricing * 0.25;
-    priceEl.textContent = `$${discountPrice.toFixed(2)}`;
+
+    priceElArr.forEach((priceEl) => {
+      priceEl.textContent = `$${discountPrice.toFixed(2)}`;
+    });
   } else {
-    priceEl.textContent = `$${pricing.toFixed(2)}`;
+    priceElArr.forEach((priceEl) => {
+      priceEl.textContent = `$${pricing.toFixed(2)}`;
+    });
   }
 };
 

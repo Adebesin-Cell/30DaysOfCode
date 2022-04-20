@@ -41,6 +41,7 @@ body {
   font-family: var(--Manrope);
   font-size: calc(var(--size-m) - 1px);
   line-height: 1.5;
+  overflow-x: hidden;
 }
 
 :root {
@@ -81,6 +82,19 @@ body {
   padding-bottom: calc(5.15 * var(--span-2xl));
 }
 
+@media only screen and (max-width: 600px) {
+  .header {
+    padding-top: calc(1.5 * var(--span-xl));
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .header {
+    padding-left: var(--span-s);
+    padding-right: var(--span-s);
+  }
+}
+
 .header__overlay {
   position: absolute;
   left: 50%;
@@ -102,6 +116,12 @@ body {
   text-align: center;
 }
 
+@media only screen and (max-width: 600px) {
+  .header__heading {
+    font-size: var(--size-l);
+  }
+}
+
 .header__paragraph {
   margin-top: calc(var(--span-xs) + 2px);
   font-family: var(--Manrope);
@@ -109,6 +129,12 @@ body {
   font-weight: var(--weight-lg);
   color: var(--f__grayish__blue);
   text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .header__paragraph {
+    padding: 0 var(--span-xl);
+  }
 }
 
 .pricing {
@@ -126,6 +152,15 @@ body {
           box-shadow: 0 10px 40px -20px rgba(46, 78, 150, 0.4);
 }
 
+@media only screen and (max-width: 600px) {
+  .pricing {
+    margin-top: calc(-5 * var(--span-2xl) + var(--span-2xl));
+    margin-left: var(--span-s);
+    margin-right: var(--span-s);
+    margin-bottom: var(--span-m);
+  }
+}
+
 .pricing__header {
   margin-top: var(--span-s);
   display: -webkit-box;
@@ -138,6 +173,15 @@ body {
       -ms-flex-align: center;
           align-items: center;
   padding: 0 var(--span-xl);
+}
+
+@media only screen and (max-width: 600px) {
+  .pricing__header {
+    padding: 0 var(--span-s);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .pricing__rate {
@@ -157,6 +201,32 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .pricing__value {
+    display: none;
+  }
+}
+
+.pricing__value--mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .pricing__value--mobile {
+    padding: var(--span-m) 0;
+    padding-bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .pricing__value--lg {
@@ -187,6 +257,12 @@ body {
 .pricing__input {
   margin-top: var(--span-l);
   padding: 0 var(--span-xl);
+}
+
+@media only screen and (max-width: 600px) {
+  .pricing__input {
+    padding: 0 var(--span-s);
+  }
 }
 
 .pricing__range {
@@ -263,6 +339,15 @@ body {
   margin-bottom: calc(var(--span-l) + 2px);
 }
 
+@media only screen and (max-width: 600px) {
+  .pricing__toggle {
+    padding: 0 var(--span-s);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .pricing__billing {
   font-family: var(--Manrope);
   font-size: calc(var(--size-xs));
@@ -279,6 +364,29 @@ body {
   border-radius: 20px;
   color: var(--f__l__red);
   background: var(--f__l__grayish__red);
+}
+
+@media only screen and (max-width: 600px) {
+  .pricing__discount {
+    display: none;
+  }
+}
+
+.pricing__discount--mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .pricing__discount--mobile {
+    display: inline-block;
+    font-size: calc(var(--size-xs) - 2px);
+    font-weight: var(--weight-xxlg);
+    padding: 5px 8px;
+    margin-left: 5px;
+    border-radius: 20px;
+    color: var(--f__l__red);
+    background: var(--f__l__grayish__red);
+  }
 }
 
 .pricing__checkbox {
@@ -326,11 +434,30 @@ body {
   display: flex;
 }
 
+@media only screen and (max-width: 600px) {
+  .pricing__footer {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: var(--span-xl);
+  }
+}
+
 .pricing__list {
   list-style-type: none;
   display: -ms-grid;
   display: grid;
   gap: var(--span-xs);
+}
+
+@media only screen and (max-width: 600px) {
+  .pricing__list {
+    margin-bottom: var(--span-m);
+  }
 }
 
 .pricing__item {

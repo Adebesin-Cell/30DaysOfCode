@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive pricing component</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__overlay">
+          <img
+            src="./images/pattern-circles.svg"
+            alt="pattern-circles"
+            class="header__image"
+          />
+        </div>
+        <div class="header__details">
+          <h1 class="header__heading">Simple, traffic-based pricing</h1>
+          <p class="header__paragraph">
+            Sign-up for our 30-day trial. No credit card required.
+          </p>
+        </div>
+      </header>
+      <div class="pricing">
+        <div class="pricing__header">
+          <h3 class="pricing__rate">500k pageviews</h3>
+          <h1 class="pricing__value">
+            <span class="pricing__value--lg price"> $24.00 </span>
+            <span class="divider"> / </span>
+            <span class="pricing__value--sm"> month </span>
+          </h1>
+        </div>
+        <div class="pricing__input">
+          <input
+            value="0"
+            type="range"
+            name="pricing__range"
+            aria-label="pricing__range"
+            class="pricing__range"
+          />
+        </div>
+
+        <h1 class="pricing__value--mobile price">
+          <span class="pricing__value--lg"> $24.00 </span>
+          <span class="divider"> / </span>
+          <span class="pricing__value--sm"> month </span>
+        </h1>
+
+        <div class="pricing__toggle">
+          <p class="pricing__billing">Monthly Billing</p>
+          <div class="pricing__check">
+            <input
+              type="checkbox"
+              name="pricing toggle"
+              class="pricing__checkbox"
+            />
+          </div>
+          <p class="pricing__billing">
+            Yearly Billing
+            <span class="pricing__discount"> 25% discount </span>
+            <span class="pricing__discount--mobile"> -25% </span>
+          </p>
+        </div>
+        <div class="pricing__footer">
+          <ul class="pricing__list">
+            <li class="pricing__item">
+              <span class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="9" height="8">
+                  <path
+                    fill="none"
+                    stroke="#10D8C4"
+                    stroke-width="2"
+                    d="M1 4.134l1.907 1.908L7.949 1"
+                  />
+                </svg>
+              </span>
+              <span class="text"> Unlimited websites </span>
+            </li>
+            <li class="pricing__item">
+              <span class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="9" height="8">
+                  <path
+                    fill="none"
+                    stroke="#10D8C4"
+                    stroke-width="2"
+                    d="M1 4.134l1.907 1.908L7.949 1"
+                  />
+                </svg>
+              </span>
+              <span class="text"> 100% data ownership </span>
+            </li>
+            <li class="pricing__item">
+              <span class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="9" height="8">
+                  <path
+                    fill="none"
+                    stroke="#10D8C4"
+                    stroke-width="2"
+                    d="M1 4.134l1.907 1.908L7.949 1"
+                  />
+                </svg>
+              </span>
+              <span class="text"> Email reports </span>
+            </li>
+          </ul>
+          <div class="pricing__trial">
+            <a href="" class="btn btn--blue" name="Start my trial">
+              Start my trial
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./Js/app.js"></script>
+  </body>
+</html>

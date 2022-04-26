@@ -57,12 +57,25 @@ body {
   place-items: center;
 }
 
+@media only screen and (max-width: 600px) {
+  .container {
+    padding: 0 calc(var(--span-xs) + 5px);
+  }
+}
+
 .card {
   padding: var(--span-l);
   border-radius: 15px;
   background: var(--dark__grayish__blue);
   min-width: 400px;
   position: relative;
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+    min-width: 100%;
+    max-width: 100%;
+  }
 }
 
 .card__title {
@@ -87,12 +100,19 @@ body {
   color: var(--light__cyan);
 }
 
+@media only screen and (max-width: 600px) {
+  .card__paragraph {
+    max-width: 100%;
+  }
+}
+
 .card__paragraph p {
   font-family: var(--Manrope);
   font-size: calc(var(--size-l) + 4px);
   font-weight: var(--weight-xxlg);
   text-align: center;
   color: var(--light__cyan);
+  max-width: 100%;
 }
 
 .card__paragraph::first-letter {
@@ -102,6 +122,22 @@ body {
 .card__divider {
   padding-top: var(--span-m);
   padding-bottom: var(--span-m);
+}
+
+@media only screen and (max-width: 600px) {
+  .card__divider--desktop {
+    display: none;
+  }
+}
+
+.card__divider--mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .card__divider--mobile {
+    display: block;
+  }
 }
 
 .card__button {

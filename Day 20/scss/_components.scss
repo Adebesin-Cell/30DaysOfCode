@@ -43,6 +43,10 @@
   background: var(--dark__blue);
   display: grid;
   place-items: center;
+
+  @media only screen and (max-width: 600px) {
+    padding: 0 calc(var(--span-xs) + 5px);
+  }
 }
 
 .card {
@@ -51,6 +55,11 @@
   background: var(--dark__grayish__blue);
   min-width: 400px;
   position: relative;
+
+  @media only screen and (max-width: 600px) {
+    min-width: 100%;
+    max-width: 100%;
+  }
 
   &__title {
     font-family: var(--Manrope);
@@ -73,12 +82,17 @@
     text-align: center;
     color: var(--light__cyan);
 
+    @media only screen and (max-width: 600px) {
+      max-width: 100%;
+    }
+
     p {
       font-family: var(--Manrope);
       font-size: calc(var(--size-l) + 4px);
       font-weight: var(--weight-xxlg);
       text-align: center;
       color: var(--light__cyan);
+      max-width: 100%;
     }
 
     &::first-letter {
@@ -89,6 +103,20 @@
   &__divider {
     padding-top: var(--span-m);
     padding-bottom: var(--span-m);
+
+    &--desktop {
+      @media only screen and (max-width: 600px) {
+        display: none;
+      }
+    }
+
+    &--mobile {
+      display: none;
+
+      @media only screen and (max-width: 600px) {
+        display: block;
+      }
+    }
   }
 
   &__button {

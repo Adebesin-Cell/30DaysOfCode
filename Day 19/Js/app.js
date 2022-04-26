@@ -1,4 +1,5 @@
 const FETCH_ADRESS = "https://api.adviceslip.com/advice";
+const GENERATE__TIMER = 10000;
 const blockqouteEl = document.querySelector(".card__paragraph");
 const cardTitleEl = document.querySelector(".card__title");
 const cardButtonEl = document.querySelector(".card__button");
@@ -33,6 +34,14 @@ const fetchData = async function () {
   await fetchData();
 })();
 
+const interval = setInterval(() => {
+  (async function () {
+    await fetchData();
+  })();
+}, GENERATE__TIMER);
+
 cardButtonEl.addEventListener("click", async function (e) {
+  blockqouteEl.innerHTML = `<p>Loading...</p>`;
   await fetchData();
+  console.log("clicked");
 });

@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+// global box model setting
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+// global font setting
+body {
+  font-family: var(--Red-Hat-Display);
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5;
+}

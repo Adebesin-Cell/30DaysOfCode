@@ -136,7 +136,12 @@ body {
 
 @media only screen and (max-width: 600px) {
   .card__divider--mobile {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 

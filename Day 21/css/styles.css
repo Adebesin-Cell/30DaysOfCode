@@ -117,6 +117,13 @@ body {
   display: grid;
   place-items: center;
   background: var(--main-bg);
+  padding: var(--span-m);
+}
+
+@media only screen and (max-width: 600px) {
+  .wrapper {
+    padding: var(--span-s);
+  }
 }
 
 .calculator {
@@ -281,6 +288,12 @@ body {
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
   gap: var(--span-s);
+}
+
+@media only screen and (max-width: 600px) {
+  .calculator__keyboard {
+    gap: calc(var(--span-xs) + 5px);
+  }
 }
 
 .calculator__button {

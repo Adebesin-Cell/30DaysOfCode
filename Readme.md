@@ -81,3 +81,19 @@
 **Day21**
 
 - Solution URL: [https://github.com/Adebesin-Cell/30DaysOfCode/tree/main/Day%2021](https://adebesin-cell.github.io/30DaysOfCode/Day%2021/)
+
+**Day22**
+
+- Solution URL: [https://github.com/Adebesin-Cell/30DaysOfCode/tree/main/Day%2022](https://adebesin-cell.github.io/30DaysOfCode/Day%2022/)
+
+**Day23**
+
+- Solution URL: [https://github.com/Adebesin-Cell/30DaysOfCode/tree/main/Day%2023](https://adebesin-cell.github.io/30DaysOfCode/Day%2023/)
+
+**Day24**
+
+- Solution URL: [https://github.com/Adebesin-Cell/30DaysOfCode/tree/main/Day%2024](https://adebesin-cell.github.io/30DaysOfCode/Day%2024/)
+
+**Day25**
+
+- Solution URL: [https://github.com/Adebesin-Cell/30DaysOfCode/tree/main/Day%2025](https://adebesin-cell.github.io/30DaysOfCode/Day%2025/)

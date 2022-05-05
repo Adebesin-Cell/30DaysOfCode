@@ -77,3 +77,7 @@
 **Day20**
 
 - Solution URL: [https://github.com/Adebesin-Cell/30DaysOfCode/tree/main/Day%2020](https://adebesin-cell.github.io/30DaysOfCode/Day%2020/)
+
+**Day21**
+
+- Solution URL: [https://github.com/Adebesin-Cell/30DaysOfCode/tree/main/Day%2021](https://adebesin-cell.github.io/30DaysOfCode/Day%2021/)

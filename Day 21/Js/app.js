@@ -60,7 +60,7 @@ const evalauteOperation = function () {
     setScreenAttributeValue();
   } catch (error) {
     console.log(error);
-    alert(error.message);
+    calculatorScreenEl.value = "Error!";
     setScreenAttributeValue();
   }
 };

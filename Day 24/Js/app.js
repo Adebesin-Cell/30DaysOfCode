@@ -1,6 +1,10 @@
-const currentTheme = localStorage.getItem("calculator_theme");
+let currentTheme = localStorage.getItem("calculator_theme");
 const wrapper = document.querySelector(".calculator__switch");
 const btns = document.querySelectorAll(".calculator__theme-check");
+
+if (currentTheme === null) {
+  document.querySelector("#theme--1").checked = true;
+}
 
 const calculatorScreenEl = document.querySelector(".calculator__input");
 const calculatorHistoryEl = document.querySelector(".calculator__history");
@@ -17,9 +21,15 @@ if (currentTheme == "theme--1") {
   document.documentElement.classList.toggle("theme--2");
 } else if (currentTheme == "theme--3") {
   document.documentElement.classList.toggle("theme--3");
+} else {
+  document.documentElement.classList.toggle("theme--1");
 }
 
-document.documentElement.classList.add(currentTheme);
+currentTheme
+  ? document.documentElement.classList.add(currentTheme)
+  : document.documentElement.classList.add("theme--1");
+
+// const btnArray = Array.from(...btns);
 
 btns.forEach((btn) => {
   if (btn.id === currentTheme) {

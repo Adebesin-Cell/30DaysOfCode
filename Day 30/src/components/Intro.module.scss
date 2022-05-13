@@ -1,0 +1,121 @@
+.section-intro {
+  padding: var(--span-2xl) 10%;
+  padding-right: 0;
+  padding-bottom: calc(var(--span-2xl) * 3);
+
+  @media only screen and (min-width: 1960px) {
+    padding-left: 10%;
+  }
+
+  @media only screen and (max-width: 1440px) {
+    padding-left: 10%;
+  }
+
+  @media only screen and (max-width: 1200px) {
+    padding-left: 7%;
+  }
+
+  @media only screen and (max-width: 1140px) {
+    padding-left: 5%;
+  }
+
+  @media only screen and (max-width: 990px) {
+    padding-left: 30px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    padding-top: var(--span-l);
+  }
+
+  @media only screen and (max-width: 600px) {
+    padding-bottom: calc(var(--span-2xl) * 2);
+  }
+}
+
+.intro {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+
+  @media only screen and (max-width: 990px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media only screen and (max-width: 600px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  &__content {
+    padding-top: var(--span-2xl);
+
+    @media only screen and (max-width: 1140px) {
+      padding-top: var(--span-m);
+    }
+
+    @media only screen and (max-width: 600px) {
+      order: 1;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      padding-right: 30px;
+    }
+  }
+
+  &__heading {
+    font-family: var(--Poppins);
+    font-size: calc(var(--size-2xl) + var(--size-l));
+    font-weight: var(--weight-xlg);
+    line-height: 84px;
+    color: var(--very-dark-violet);
+
+    @media only screen and (max-width: 1200px) {
+      font-size: calc(var(--size-2xl) + 4px);
+      line-height: 56px;
+    }
+
+    @media only screen and (max-width: 768px) {
+      font-size: calc(var(--size-xl) + 4px);
+      line-height: 46px;
+    }
+
+    @media only screen and (max-width: 600px) {
+      text-align: center;
+    }
+
+    span {
+      display: block;
+    }
+  }
+
+  &__paragraph {
+    padding-top: var(--span-xs);
+    font-family: var(--Poppins);
+    font-size: var(--size-m);
+    font-weight: var(--weight-md);
+    line-height: 27px;
+    color: var(--grayish-violet);
+    padding-right: calc(1.5 * var(--span-2xl));
+    max-width: 60%;
+
+    @media only screen and (max-width: 1200px) {
+      padding-right: 0;
+    }
+
+    @media only screen and (max-width: 1140px) {
+      max-width: 85%;
+    }
+
+    @media only screen and (max-width: 600px) {
+      max-width: 100%;
+      text-align: center;
+    }
+  }
+
+  &__image-box {
+    margin-right: -100px;
+  }
+
+  &__image {
+    display: block;
+    width: 100%;
+  }
+}

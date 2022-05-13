@@ -97,3 +97,23 @@
 **Day25**
 
 - Solution URL: [https://github.com/Adebesin-Cell/30DaysOfCode/tree/main/Day%2025](https://adebesin-cell.github.io/30DaysOfCode/Day%2025/)
+
+**Day26**
+
+- Solution URL: [https://github.com/Adebesin-Cell/30DaysOfCode/tree/main/Day%2026](https://my-url-shortner-app.netlify.app/)
+
+**Day27**
+
+- Solution URL: [https://github.com/Adebesin-Cell/30DaysOfCode/tree/main/Day%2027](https://my-url-shortner-app.netlify.app/)
+
+**Day28**
+
+- Solution URL: [https://github.com/Adebesin-Cell/30DaysOfCode/tree/main/Day%2028](https://my-url-shortner-app.netlify.app/)
+
+**Day29**
+
+- Solution URL: [https://github.com/Adebesin-Cell/30DaysOfCode/tree/main/Day%2029](https://my-url-shortner-app.netlify.app/)
+
+**Day30**
+
+- Solution URL: [https://github.com/Adebesin-Cell/30DaysOfCode/tree/main/Day%2030](https://my-url-shortner-app.netlify.app/)

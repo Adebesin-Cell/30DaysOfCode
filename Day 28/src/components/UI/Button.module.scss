@@ -1,0 +1,73 @@
+.btn {
+  font-family: var(--Poppins);
+  border: none;
+  outline: none;
+  background: transparent;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+
+  &--header {
+    padding: var(--span-xs) var(--span-m);
+    background: var(--cyan);
+    border-radius: 35px;
+    font-size: var(--size-m);
+    font-weight: var(--weight-xlg);
+    line-height: 25px;
+    color: var(--white);
+    text-align: center;
+    transition: all 300ms;
+
+    &:hover {
+      background: var(--cyan-light);
+    }
+  }
+
+  &--intro {
+    margin-top: var(--span-m);
+    padding: var(--span-xs) var(--span-m);
+    background: var(--cyan);
+    border-radius: 35px;
+    font-size: var(--size-m);
+    font-weight: var(--weight-xlg);
+    line-height: 25px;
+    color: var(--white);
+    text-align: center;
+    transition: all 300ms;
+
+    &:hover {
+      background: var(--cyan-light);
+    }
+  }
+
+  &--submit {
+    background: var(--cyan);
+    padding: var(--span-xs) var(--span-m);
+    border-radius: 10px;
+    font-size: var(--size-m);
+    font-weight: var(--weight-xlg);
+    line-height: 25px;
+    color: var(--white);
+    text-align: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  &--copy {
+    background: var(--cyan);
+    padding: var(--span-xs) var(--span-m);
+    border-radius: 10px;
+    font-size: var(--size-m);
+    font-weight: var(--weight-xlg);
+    line-height: 25px;
+    color: var(--white);
+
+    @media only screen and (max-width: 600px) {
+      width: 100%;
+    }
+  }
+
+  &--copied {
+    background: var(--dark-violet);
+  }
+}

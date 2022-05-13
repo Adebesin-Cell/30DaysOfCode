@@ -1,0 +1,120 @@
+.form {
+  margin-top: -90px;
+  padding: var(--span-2xl);
+  background: var(--dark-violet) url(../../assets/svgs/bg-shorten-desktop.svg);
+  background-size: cover;
+  border-radius: 10px;
+
+  @media only screen and (max-width: 990px) {
+    margin-top: -75px;
+    padding: var(--span-l);
+  }
+
+  @media only screen and (max-width: 600px) {
+    background: var(--dark-violet) url(../../assets/svgs/bg-shorten-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: var(--span-s);
+  }
+
+  &__wrapper {
+    display: grid;
+    gap: var(--span-s);
+    grid-template-columns: 4fr 1fr;
+    padding-bottom: var(--span-xs);
+
+    @media only screen and (max-width: 990px) {
+      grid-template-columns: 3fr 1fr;
+    }
+
+    @media only screen and (max-width: 768px) {
+      grid-template-columns: 2.5fr 1fr;
+    }
+
+    @media only screen and (max-width: 600px) {
+      grid-template-columns: repeat(1, 1fr);
+
+      button {
+        height: 60px;
+      }
+    }
+  }
+
+  &__group {
+    max-height: 100%;
+    position: relative;
+  }
+
+  &__input {
+    border: none;
+    outline: none;
+    display: block;
+    width: 100%;
+    height: 60px;
+    padding: 0 var(--span-m);
+    border-radius: 10px;
+    background: var(--white);
+    font-family: var(--Poppins);
+    font-size: var(--size-m);
+    font-weight: var(--weight-md);
+    line-height: 27px;
+    color: var(--grayish-violet);
+    border: 1px solid transparent;
+    transition: all 300ms;
+
+    &--error {
+      border: 2px solid var(--red);
+      color: var(--red);
+
+      &::-webkit-input-placeholder {
+        color: var(--red) !important;
+      }
+    }
+
+    &::-webkit-input-placeholder {
+      font-family: var(--Poppins);
+      font-size: var(--size-m);
+      font-weight: var(--weight-md);
+      line-height: 27px;
+      color: var(--grayish-violet);
+    }
+  }
+}
+
+.error {
+  font-family: var(--Poppins);
+  font-size: var(--size-m);
+  font-weight: var(--weight-md);
+  line-height: 23px;
+  color: var(--red);
+}
+
+.loader {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--dark-violet);
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(0);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  svg {
+    width: 18px;
+    height: 18px;
+    animation: rotate 1s linear infinite;
+  }
+}
